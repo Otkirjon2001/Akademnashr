@@ -139,6 +139,8 @@ nav {
   display: inline-block;
 }
 .hero-img {
+  display: block;
+  margin-bottom: -102px;
   border-radius: 8px;
   box-shadow: 24px 24px 0px 0px #ff750099;
 }
@@ -232,6 +234,8 @@ nav {
   display: inline-block;
 }
 .sale-img {
+  display: block;
+  margin-top: -149px;
   border-radius: 12px;
 }
 
