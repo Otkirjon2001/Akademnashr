@@ -4,16 +4,20 @@
   --font-heading:"Roboto Condensed", sans-serif;
   --font-text:"Roboto", sans-serif;
 }
-* {
+html{
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+  height: 100%;
+  scroll-behavior: smooth;
 }
-*:focus {
-  outline: 2px solid black;
-  outline-offset: 2px;
+*,*::after,*::before{
+  box-sizing: border-box;
 }
 body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0;
+  margin: 0;
   font-family: var(--font-text);
   font-size: 16px;
   font-weight: 400;
@@ -28,10 +32,21 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+main{
+  flex-grow: 1;
+}
+*:focus {
+  outline: 2px solid black;
+  outline-offset: 2px;
+}
 a {
   text-decoration: none;
 }
-
+img{
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
 .button {
   font-weight: bold;
   font-size: 13px;
