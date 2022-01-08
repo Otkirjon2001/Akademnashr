@@ -190,11 +190,26 @@ nav {
 .hero-button {
   display: inline-block;
 }
+.hero-img-box{
+  position: relative;
+}
 .hero-img {
+  position: relative;
+  z-index: 3;
   display: block;
   margin-bottom: -102px;
   border-radius: 8px;
-  box-shadow: 24px 24px 0px 0px var(--brand-color)99;
+}
+.img-shadow{
+  position: absolute;
+  z-index: 1;
+  top: 25px;
+  left: 25px;
+  width: 510px;
+  height: 510px;
+  border-radius:8px;
+  background-color: var(--brand-color);
+  opacity: 0.5;
 }
 
 /* Features */
