@@ -155,10 +155,11 @@ nav {
   background-color: #252420;
 }
 .hero-container {
+  position: relative;
   display: flex;
   justify-content: space-between;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 .hero-content {
   align-self: center;
@@ -191,13 +192,15 @@ nav {
   display: inline-block;
 }
 .hero-img-box{
-  position: relative;
+  position: absolute;
+  top: 40px;
+  right: 30px;
 }
 .hero-img {
-  position: relative;
-  z-index: 3;
   display: block;
-  margin-bottom: -102px;
+  width: 510px;
+  height: 510px;
+  filter: drop-shadow(24px 24px 0px rgba(255, 117, 0, 0.6));
   border-radius: 8px;
 }
 .img-shadow{
