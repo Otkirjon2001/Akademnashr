@@ -1,9 +1,16 @@
+/* CUSTOM PROPERTY */
+:root{
+  --brand-color: #FF7500;
+  --font-heading:"Roboto Condensed", sans-serif;
+  --font-text:"Roboto", sans-serif;
+}
+/* FONTS */
 @font-face {
   font-family: 'Roboto Condensed';
   font-style: normal;
   font-weight: 700;
   src:url('../fonts/roboto-condensed-v19-latin-700.woff2') format('woff2'),
-      url('../fonts/roboto-condensed-v19-latin-700.woff') format('woff');
+  url('../fonts/roboto-condensed-v19-latin-700.woff') format('woff');
   font-display:swap;
 }
 @font-face {
@@ -11,7 +18,7 @@
   font-style: normal;
   font-weight: 400;
   src: url('../fonts/roboto-v29-latin-regular.woff2') format('woff2'),
-       url('../fonts/roboto-v29-latin-regular.woff') format('woff');
+  url('../fonts/roboto-v29-latin-regular.woff') format('woff');
   font-display:swap;
 }
 @font-face {
@@ -19,7 +26,7 @@
   font-style: normal;
   font-weight: 500;
   src: url('../fonts/roboto-v29-latin-500.woff2') format('woff2'),
-       url('../fonts/roboto-v29-latin-500.woff') format('woff');
+  url('../fonts/roboto-v29-latin-500.woff') format('woff');
   font-display:swap;
 }
 @font-face {
@@ -27,15 +34,10 @@
   font-style: normal;
   font-weight: 700;
   src: url('../fonts/roboto-v29-latin-700.woff2') format('woff2'),
-       url('../fonts/roboto-v29-latin-700.woff') format('woff');
+  url('../fonts/roboto-v29-latin-700.woff') format('woff');
   font-display:swap;
 }
 /* Global */
-:root{
-  --brand-color: #FF7500;
-  --font-heading:"Roboto Condensed", sans-serif;
-  --font-text:"Roboto", sans-serif;
-}
 html{
   box-sizing: border-box;
   height: 100%;
@@ -79,6 +81,15 @@ img{
   height: auto;
   object-fit: cover;
 }
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
 .button {
   font-weight: bold;
   font-size: 13px;
@@ -88,6 +99,7 @@ img{
   background-color: var(--brand-color);
   border-radius: 4px;
   transition: opacity 0.4s ease;
+  white-space: nowrap;
 }
 .button:hover {
   opacity: 0.8;
@@ -248,7 +260,7 @@ nav {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background-color: var(--brand-color)33;
+  background-color: var(--brand-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -330,15 +342,13 @@ footer {
 .social-item:not(:last-child) {
   margin-right: 16px;
 }
-.social-item svg {
-  cursor: pointer;
-  transition: color 0.4s ease, opacity 0.4s ease;
+.social-item-link{
+  display: flex;
+  color: #000;
+  transition: color 0.4s ease;
 }
-.social-item svg path:hover {
+.social-item-link:hover{
   color: var(--brand-color);
-}
-.social-item svg path:active {
-  opacity: 0.6;
 }
 .footer-hr {
   display: block;
