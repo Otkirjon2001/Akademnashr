@@ -260,7 +260,7 @@ nav {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background-color: var(--brand-color);
+  /* background-color: var(--brand-color); */
   display: flex;
   justify-content: center;
   align-items: center;
