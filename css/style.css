@@ -257,6 +257,8 @@ img{
   letter-spacing: 0.5px;
   color: #000000;
 }
+
+/*  CONVENIENCES*/
 .conveniences {
   display: flex;
   margin: 0;
@@ -287,6 +289,7 @@ img{
 .conveniences__info {
   margin: 0;
 }
+
 
 /* SALE */
 .sale {
@@ -333,69 +336,80 @@ img{
   border-radius: 12px;
 }
 
+
 /* FOOTER */
-footer {
+.site-footer {
   background-color: #f8f8f8;
 }
-.footer-container {
+.site-footer__container {
   padding-top: 56px;
   padding-bottom: 56px;
 }
-.site-footer-top {
+.site-footer__top {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 51px;
 }
-.social-icons {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.site-footer__logo{
+  margin-right: 30px;
 }
-.social-item:not(:last-child) {
-  margin-right: 16px;
-}
-.social-item-link{
-  display: flex;
-  color: #000;
-  transition: color 0.4s ease;
-}
-.social-item-link:hover{
-  color: var(--brand-color);
-}
-.footer-hr {
+.site-footer__hr {
   display: block;
   width: 1100px;
   height: 2px;
   margin-bottom: 64px;
   background-color: #25242080;
 }
-.site-footer-bottom {
+
+/*SOCIAL-MEDIA  */
+.social-media {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.social-media__item:not(:last-child) {
+  margin-right: 16px;
+}
+.social-media__link{
+  display: flex;
+  color: #000;
+  transition: color 0.4s ease, opacity 0.4s ease;
+}
+.social-media__link:hover{
+  color: var(--brand-color);
+}
+.social-media__link:active{
+  opacity: 0.6;
+}
+
+/* PAGINATION */
+.pagination {
   display: flex;
 }
-.site-footer-bottom ul {
+.pagination__list {
   max-width: 224px;
   width: 100%;
   margin: 0;
   padding: 0;
   list-style: none;
 }
-.site-footer-bottom ul:not(:last-child) {
+.pagination__list:not(:last-child) {
   margin-right: 68px;
 }
-.footer-sitenav-item {
+.pagination__item {
   margin-bottom: 16px;
 }
-.footer-sitenav-item-link {
+.pagination__link {
   display: inline-block;
   line-height: 19px;
   color: #252420;
   transition: color 0.4s ease, opacity 0.4s ease;
 }
-.footer-sitenav-item-link:hover {
+.pagination__link:hover {
   color: var(--brand-color);
 }
-.footer-sitenav-item-link:active {
+.pagination__link:active {
   opacity: 0.6;
 }
